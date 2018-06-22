@@ -12,3 +12,7 @@
 */
 
 Route::get('/', 'PagesController@getHome');
+
+Route::get('/participant', 'PagesController@getParticipant');
+
+Route::get('/employe', 'PagesController@getEmploye');

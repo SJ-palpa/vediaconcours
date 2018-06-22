@@ -8,14 +8,14 @@
 
     <title>layout</title>
 
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app.css"/>
 
 </head>
 <body>
 @include('include.navbar')
-<div class="container">
 
-</div>
+@yield('content')
+
 @include('include.footer')
 </body>
 </html>
