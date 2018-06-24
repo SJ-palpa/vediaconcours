@@ -1,39 +1,65 @@
-@extends('layout.baselayout')
+@extends('layout.employeBase')
 
-@section('content')
-    <div class="container-fluid mt2">
-        <div class="row content">
-            <div class="col-sm-2 sidenav">
-                <h4>Gestion</h4>
-                <ul class="nav nav-pills nav-stacked">
-                    <li><a href="#section1">Gallerie publicité</a></li>
-                    <li><a href="#section2">Gestion publicité</a></li>
-                    <li class="active"><a href="#section3">Création publicité</a></li>
-                </ul><br>
-            </div>
-
+@section('contentEmploye')
             <div class="col-sm-8">
                 <div class="col-sm-12">
-                    <div>
-                        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                        <p>Concours 1</p>
-                    </div>
                     <div class="well">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos explicabo molestias optio possimus rem. Commodi eos in ipsam laborum laudantium, magni necessitatibus nostrum odio perspiciatis quas quia quod repellendus tempora.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur corporis dicta, dolore, dolores earum et eveniet itaque laudantium, natus nobis officia quas similique ut veniam voluptates. Ab aut fuga nulla?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda commodi cum, distinctio dolorem doloremque dolorum error est expedita facere impedit itaque natus nobis nulla quasi quo sapiente soluta voluptas.</p>
+                        <h3> Module contenu du concours</h3>
+                        <p>Text</p>
+                        <p>réseau sociaux</p>
+                        <p>video</p>
+                        <p>image</p>
                     </div>
-                    <div class="well mr2 ml2 col-sm-4">
-                        <p>composant 1</p>
+
+                    <div class="well  col-sm-5  ">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 1</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 2</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 3</label>
+                        </div>
                     </div>
-                    <div class="well mr2 ml2 col-sm-4">
-                        <p>composant 1</p>
+                    <div class="well  col-sm-5 col-sm-offset-2">
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">Option 1</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">Option 2</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">Option 3</label>
+                        </div>
                     </div>
-                    <div class="well mr2 ml2 col-sm-4">
-                        <p>composant 1</p>
+                    <div class="well  col-sm-5 ">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="panel panel-default text-left">
+                                    <div class="panel-body">
+                                        <img src="https://images.unsplash.com/photo-1529570286810-e149c4bae142?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=877eb3e5f185c7c1fdc7cb23ec305dcd&auto=format&fit=crop&w=1654&q=80" class="img-responsive" style="width:100%; margin-bottom:15px" alt="Image">
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="well mr2 ml2 col-sm-4">
-                        <p>composant 1</p>
+                    <div class="well  col-sm-5 col-sm-offset-2">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="panel panel-default text-left">
+                                    <div class="panel-body">
+                                        <img src="https://englishtap.com/biscuits-12q/images/buttons/video.jpg" class="img-responsive" style="width:100%; margin-bottom:15px" alt="Image">
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -49,6 +75,4 @@
                     <p>composant 3</p>
                 </div>
             </div>
-        </div>
-    </div>
 @endsection

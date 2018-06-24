@@ -8361,7 +8361,7 @@ button.close {
 
 footer {
   background-color: #f2f2f2;
-  padding: 25px;
+  padding: 15px;
 }
 
 .carousel-inner img {
@@ -8380,20 +8380,21 @@ footer {
 }
 
 #myFooter {
-  background-color: #222;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #cc0000;
   color: white;
-  padding-top: 30px;
 }
 
 #myFooter .authors {
-  color: #666;
+  color: white;
   font-style: italic;
 }
 
 #myFooter .footer-copyright {
-  background-color: #222;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  background-color: #cc0000;
+  padding-bottom: 15px;
   text-align: center;
 }
 
@@ -8411,5 +8412,41 @@ footer {
 
 .ml2 {
   margin-left: 5px;
+}
+
+.vediaNavbar {
+  background-color: #cc0000;
+  border-color: #cc0000;
+  border: none;
+}
+
+.vediaCouleurRouge {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+.vediaCouleurGris {
+  background-color: #a9abac;
+  border-color: #a9abac;
+}
+
+.vediaFontCouleurWhite {
+  color: #ffffff;
+}
+
+.vediaFontCouleurRed {
+  color: #cc0000;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+.marginTopBase {
+  padding-top: 60px;
 }
 
