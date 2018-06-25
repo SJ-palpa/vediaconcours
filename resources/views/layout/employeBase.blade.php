@@ -7,12 +7,18 @@
                 <h4>Gestion</h4>
                 <ul class="nav nav-pills nav-stacked ">
                     <li><a href="#section1" class="vediaFontCouleurRed">Gallerie concours</a></li>
-                    <li><a href="#section2" class="vediaFontCouleurRed">Gestion concours</a></li>
-                    <li><a href="#section2" class="vediaFontCouleurRed">Gestion participant</a></li>
-                    <li ><a href="#section3" class="vediaCouleurRouge vediaFontCouleurWhite">Création concours</a></li>
+                    <li><a href="employeGestConcours" class="{{Request::is('employeGestConcours') ? 'vediaCouleurRouge vediaFontCouleurWhite' : 'vediaFontCouleurRed'}}">Gestion concours</a></li>
+                    <li><a href="employeGestParti" class="{{Request::is('employeGestParti') ? 'vediaCouleurRouge vediaFontCouleurWhite' : 'vediaFontCouleurRed'}}">Gestion participants</a></li>
+                    <li ><a href="employeCreaConcours" class="{{Request::is('employeCreaConcours') ? 'vediaCouleurRouge vediaFontCouleurWhite' : 'vediaFontCouleurRed'}}">Création concours</a></li>
                 </ul><br>
             </div>
-            @yield('contentEmploye')
+            @if(Request::is('employeCreaConcours'))
+                @yield('contentEmployeCreaConcours')
+            @elseif(Request::is('employeGestParti'))
+                @yield('contentEmployeGestParti')
+            @elseif(Request::is('employeGestConcours'))
+                @yield('contentEmployeGestConcours')
+            @endif
         </div>
     </div>
 @endsection

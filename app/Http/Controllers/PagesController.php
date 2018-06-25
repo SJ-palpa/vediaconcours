@@ -16,8 +16,17 @@ class PagesController extends Controller
         return view('participant');
     }
 
-    public function getEmploye()
+    public function getEmployeCreaConcours()
     {
-        return view('employe');
+        return view('employeCreaConcours');
+    }
+    public function getEmployeGestParti()
+    {
+        return view('employeGestParticipant');
+    }
+
+    public function getEmployeGestConcours()
+    {
+        return view('employeGestConcours');
     }
 }

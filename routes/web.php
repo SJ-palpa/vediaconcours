@@ -15,4 +15,9 @@ Route::get('/', 'PagesController@getHome');
 
 Route::get('/participant', 'PagesController@getParticipant');
 
-Route::get('/employe', 'PagesController@getEmploye');
+Route::get('/employeCreaConcours', 'PagesController@getEmployeCreaConcours');
+
+Route::get('/employeGestParti', 'PagesController@getEmployeGestParti');
+
+Route::get('/employeGestConcours', 'PagesController@getEmployeGestConcours');
+
