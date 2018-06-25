@@ -94,62 +94,87 @@
                     dans les newsletters, sur Facebook et sur Instagram.
                 </p>
                 </br>
-                <h2 class="text-center"> Pronostique </h2>
-                </br>
-                <div class="dropdown col-sm-4 text-center">
-                    <button class="btn btn-default dropdown-toggle vediaFontCouleurRed" type="button" data-toggle="dropdown">Suisse
-                        <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">0</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">9</a></li>
-                        <li><a href="#">10</a></li>
-                        <li><a href="#">11</a></li>
-                        <li><a href="#">12</a></li>
-                    </ul>
-                </div>
-                <p class="col-sm-4 text-center"><b>-</b></p>
-                <div class="dropdown col-sm-4 text-center">
-                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Serbie
-                        <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">0</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">9</a></li>
-                        <li><a href="#">10</a></li>
-                        <li><a href="#">11</a></li>
-                        <li><a href="#">12</a></li>
-                    </ul>
-                </div>
-                </br>
-                <button type="button" class="btn vediaCouleurRouge vediaFontCouleurWhite btn-sm mt2 col-sm-offset-5 col-sm-2 text-center ">Valider</button>
-                </br>
-                </br>
-                </br>
-                <div class="col-sm-12">
-                    <h4>Il reste encore tant de jour(s) pour voter : </h4>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped vediaCouleurRouge active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                            10 jours
+
+                <div class="well container col-sm-12">
+                    <h2 class="text-center"> Pronostique </h2>
+                    </br>
+                    <div class="dropdown col-sm-4 text-center">
+                        <button class="btn btn-default dropdown-toggle vediaFontCouleurRed" type="button" data-toggle="dropdown">Suisse
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">0</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                            <li><a href="#">11</a></li>
+                            <li><a href="#">12</a></li>
+                        </ul>
+                    </div>
+                    <p class="col-sm-4 text-center"><b>-</b></p>
+                    <div class="dropdown col-sm-4 text-center">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Serbie
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">0</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                            <li><a href="#">11</a></li>
+                            <li><a href="#">12</a></li>
+                        </ul>
+                    </div>
+                    </br>
+                    <button type="button" class="btn vediaCouleurRouge vediaFontCouleurWhite btn-sm mt2 col-sm-offset-5 col-sm-2 text-center ">Valider</button>
+                    </br>
+                    </br>
+                    </br>
+                    <div class="col-sm-12">
+                        <h4>Il reste encore tant de jour(s) pour voter : </h4>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped vediaCouleurRouge active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+
+                            </div>
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width:20%">
+                                10 jours
+                            </div>
                         </div>
                     </div>
+                    <br>
                 </div>
-                <h2 class="text-center"> Résultat </h2>
+                <br>
+
+
+                <div class="well container col-sm-12">
+                    <h2 class="text-center"> Résultat </h2>
+                    </br>
+                    </br>
+                    <div class="col-sm-4 text-center">
+                        <button type="button" class="btn vediaCouleurRouge vediaFontCouleurWhite btn-danger">Suisse <span class="badge">2</span></button>
+                    </div>
+                    <p class="col-sm-4 text-center"><b>-</b></p>
+                    <div class="col-sm-4 text-center">
+                        <button type="button" class="btn vediaFontCouleurRed vediaFontCouleurWhite">Serbie <span class="badge">1</span></button>
+                    </div>
+                    </br>
+                    </br>
+                    <div class="well col-sm-6 col-sm-offset-3 text-center yellowGreenBackground vediaFontCouleurWhite">
+                        Merci de votre participation et à bientôt pour un nouveau concours Vedia !
+                    </div>
+                </div>
                 </br>
-                </br>
-                <h2 class="text-center"> Commentaire </h2>
+                <h2 class="text-center col-sm-12"> Commentaire </h2>
                 </br>
             </div>
 
