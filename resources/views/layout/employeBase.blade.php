@@ -6,7 +6,6 @@
             <div class="col-sm-2 sidenav">
                 <h4>Gestion</h4>
                 <ul class="nav nav-pills nav-stacked ">
-                    <li><a href="#section1" class="vediaFontCouleurRed">Gallerie concours</a></li>
                     <li><a href="employeGestConcours" class="{{Request::is('employeGestConcours') ? 'vediaCouleurRouge vediaFontCouleurWhite' : 'vediaFontCouleurRed'}}">Gestion concours</a></li>
                     <li><a href="employeGestParti" class="{{Request::is('employeGestParti') ? 'vediaCouleurRouge vediaFontCouleurWhite' : 'vediaFontCouleurRed'}}">Gestion participants</a></li>
                     <li ><a href="employeCreaConcours" class="{{Request::is('employeCreaConcours') ? 'vediaCouleurRouge vediaFontCouleurWhite' : 'vediaFontCouleurRed'}}">Création concours</a></li>

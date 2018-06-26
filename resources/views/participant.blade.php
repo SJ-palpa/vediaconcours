@@ -96,7 +96,7 @@
                 </br>
 
                 <div class="well container col-sm-12">
-                    <h2 class="text-center"> Pronostique </h2>
+                    <h2 class="text-center"> Pronostic </h2>
                     </br>
                     <div class="dropdown col-sm-4 text-center">
                         <button class="btn btn-default dropdown-toggle vediaFontCouleurRed" type="button" data-toggle="dropdown">Suisse

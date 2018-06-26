@@ -5,9 +5,9 @@
         <div class="col-sm-12">
             <div class="well">
                 <h3> Module contenu</h3>
-                <p>Text</p>
-                <p>réseau sociaux</p>
-                <p>video</p>
+                <p>Texte</p>
+                <p>réseaux sociaux</p>
+                <p>vidéo</p>
                 <p>image</p>
             </div>
 
@@ -69,17 +69,18 @@
             </div>
 
             <div class="well  col-sm-12 ">
-                <h3> Module ticket à gratter</h3>
+                <h3> Module machine à sous</h3>
                 <div class="row">
                     <div class="col-sm-12">
-                        <img src="images/machine_a_sous.jpg" class="img-responsive" style="width:100%; margin-bottom:15px"
-                         alt="Image">
+                        <img src="images/machine_a_sous.jpeg" class="img-responsive"
+                             style="width:100%; margin-bottom:15px"
+                             alt="Image">
                     </div>
                 </div>
             </div>
             <div class="well col-sm-12 ">
                 <h3> Module ticket à gratter</h3>
-                <div class="row">
+                <div class="row ">
                     <div class="col-sm-12 text-center container">
                         <p>Gratter pour gagner</p>
                         <div id="canvasCon" class="customCursor">
@@ -89,9 +90,30 @@
                     </div>
                 </div>
             </div>
+
+            <div class="well  col-sm-12 ">
+                <h3> Module date</h3>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-4">
+                        <img src="images/datetimePicker.png" class="img-responsive"
+                             style="width:60%; margin-bottom:15px"
+                             alt="Image">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="col-sm-2 ">
+        <h3><u> Enregistrement</u></h3>
+        <div class="col-sm-12  mb2">
+            <button type="button" class="btn btnVedia" >Enregistrer</button>
+        </div>
+        <div class="col-sm-12  mb2">
+            <button type="button" class="btn btnVedia" >Enregistrer template</button>
+        </div>
+        </br>
+        </br>
+        </br>
         <h3><u> Module :</u></h3>
         <div class="well">
             <p><b>Module contenu</b></p>
@@ -106,13 +128,20 @@
             <p><b> Module video</b></p>
         </div>
         <div class="well">
+            <p><b> Module machine à sous</b></p>
+        </div>
+        <div class="well">
             <p><b> Module ticket à gratter</b></p>
         </div>
+        <div class="well">
+            <p><b> Module date</b></p>
+        </div>
     </div>
+
     <div class="form-group col-sm-8 col-sm-offset-2">
         <span><label class="mr2">Personne 1</label><i class="glyphicon glyphicon-user green"></i></span>
         <textarea class="form-control" rows="2" id="comment"></textarea>
-        <button type="button" class="btn btn-primary btn-sm col-sm-offset-11 mt2 ">Poster</button>
+        <button type="button" class="btn vediaCouleurRouge vediaFontCouleurWhite btn-sm col-sm-offset-11 mt2 ">Poster</button>
     </div>
 
 
@@ -162,10 +191,11 @@
         <span class="glyphicon glyphicon-thumbs-up"></span> Like
         <span class="badgeComm ">4</span>
     </button>
+
     <script>
         // Machine à sous
-
-
+        //
+        //
         // Que du CSS
 
 
@@ -748,7 +778,7 @@
                             // set up this listener before calling setImages():
                             scratchers[i].addEventListener('imagesloaded', onScratcherLoaded);
                             if (i != 2) {
-                                scratchers[i].setImages('https://ars.wildtangent.com/wtscratcher/img/img/s' + prizeresult + 'bg.jpg',
+                                scratchers[i].setImages('images/vediaConcoursTicketGratter.png',
                                     'https://ars.wildtangent.com/wtscratcher/img/img/s' + 1 + 'fg.png');
                             } else {
                                 scratchers[i].setImages('https://ars.wildtangent.com/wtscratcher/img/img/s' + 2 + 'bg.jpg',
@@ -771,7 +801,7 @@
                             if (i != 2) {
 
                                 //https://wtars-a.akamaihd.net/wtscratcher/img/img/s
-                                scratchers[i].setImages('https://ars.wildtangent.com/wtscratcher/img/img/s' + prizeresult + 'bg.jpg',
+                                scratchers[i].setImages('images/vediaConcoursTicketGratter.png',
                                     'https://ars.wildtangent.com/wtscratcher/img/img/s' + 1 + 'fg.png');
                             } else {
                                 scratchers[i].setImages('https://ars.wildtangent.com/wtscratcher/img/img/s' + 1 + 'bg.jpg',
@@ -792,7 +822,7 @@
                             // set up this listener before calling setImages():
                             scratchers[i].addEventListener('imagesloaded', onScratcherLoaded);
                             if (i != 2) {
-                                scratchers[i].setImages('https://ars.wildtangent.com/wtscratcher/img/img/s' + prizeresult + 'bg.jpg',
+                                scratchers[i].setImages('images/vediaConcoursTicketGratter.png',
                                     'https://ars.wildtangent.com/wtscratcher/img/img/s' + 1 + 'fg.png');
                             } else {
                                 scratchers[i].setImages('https://ars.wildtangent.com/wtscratcher/img/img/s' + rando + 'bg.jpg',

@@ -8647,10 +8647,6 @@ canvas {
   margin: 0 5px;
 }
 
-.customCursor {
-  cursor: url(https://ars.wildtangent.com/wtscratcher/img/img/scratch-coin.png) 4 12, auto;
-}
-
 .rules {
   margin: 10px 0;
   text-align: center;

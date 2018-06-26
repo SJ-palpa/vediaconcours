@@ -3,15 +3,18 @@
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 mb2">
         <div class="btn-group pull-right" role="group">
             <button type="button" class="btn btnVedia" data-toggle="modal"
-                    onclick="document.getElementById('modalApercu').style.display='block'" href="#">Appercu
+                    onclick="document.getElementById('modalApercu').style.display='block'" href="#">Aperçu
             </button>
-            <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
+            <button type="button" class="btn btnVedia " data-toggle="modal"
+                    onclick="document.getElementById('modalModif').style.display='block'" href="#">
                 modifier
             </button>
-            <button type="button" class="btn btnVedia " data-toggle="modal">supprimer</button>
+            <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#supprModal">supprimer</button>
         </div>
         <p class="listetitreactu">Personne 1</p>
     </div>
+
+    <!--- Appercue -->
     <div id="modalApercu" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
             <header class="w3-container vediaCouleurRouge vediaFontCouleurWhite">
@@ -30,6 +33,7 @@
                 <h1>Personne 1</h1>
                 <p><u>nom :</u> Personne 1</p>
                 <p><u>pseudo :</u> pers1</p>
+                <p><u>adresse mail :</u> <a>personne1@outlook.com</a></p>
                 <p><u>adresse :</u> Plateau-de-Champel 1206 Genève</p>
             </div>
 
@@ -71,9 +75,58 @@
         </div>
     </div>
 
+    <!--- modification -->
+    <div id="modalModif" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+            <div class="w3-center"><br>
+                <span onclick="document.getElementById('modalModif').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                <img src="images/modal_img_femme.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
+            <div class="w3-section w3-container">
+                <button class=" btn btnVedia w3-block w3-section w3-padding w3-padding-right" type="submit">Modifier image</button>
+            </div>
+            <form class="w3-container" action="">
+                <div class="w3-section">
+                    <label><b>Nom</b></label>
+                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Personne 1"  >
+                    <label><b>Pseudo</b></label>
+                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="pers1" >
+                    <label><b>Adresse Email</b></label>
+                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="personne1@outlook.com">
+                    <label><b>Adresse</b></label>
+                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Plateau-de-Champel 1206 Genève">
+                    <label><b>Mot de passe</b></label>
+                    <input class="w3-input w3-border" type="password" placeholder="*********" name="psw" required>
+
+                </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                <button onclick="document.getElementById('modalModif').style.display='none'" type="button" class="w3-button w3-red">Annuler</button>
+                <button class="w3-right w3-button w3-green " type="submit">Modifier</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--- suppression -->
+    <div class="modal fade" id="supprModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmation</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary " data-dismiss="modal">Annuler</button>
+                    <button  type="button" class="btn btnVedia suppr" name="suppr"  >Supprimer</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
-        // Pour le modal
+        // Pour le modal Aperçue
         document.getElementsByClassName("tablink")[0].click();
 
         function openCity(evt, cityName) {
@@ -207,7 +260,7 @@
 
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
@@ -217,7 +270,7 @@
     </div>
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
@@ -227,7 +280,7 @@
     </div>
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
@@ -237,7 +290,7 @@
     </div>
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 col-sm-offset-2  mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
@@ -247,7 +300,7 @@
     </div>
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 col-sm-offset-2 mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
@@ -257,7 +310,7 @@
     </div>
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 col-sm-offset-2 mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
@@ -267,7 +320,7 @@
     </div>
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 col-sm-offset-2 mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
@@ -277,7 +330,7 @@
     </div>
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 col-sm-offset-2 mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
@@ -287,7 +340,7 @@
     </div>
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 col-sm-offset-2 mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
@@ -297,7 +350,7 @@
     </div>
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 col-sm-offset-2 mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
@@ -307,7 +360,7 @@
     </div>
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 col-sm-offset-2 mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
@@ -317,7 +370,7 @@
     </div>
     <div class="list-group-item listeactufond participantBorderLeft col-sm-8 col-sm-offset-2 mb2">
         <div class="btn-group pull-right" role="group">
-            <button type="button" class="btn btnVedia" data-toggle="modal">Appercu</button>
+            <button type="button" class="btn btnVedia" data-toggle="modal">Aperçu</button>
             <button type="button" class="btn btnVedia " data-toggle="modal" data-target="#modifAcutaliteModal">
                 modifier
             </button>
